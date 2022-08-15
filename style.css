@@ -6,6 +6,9 @@
 }
 
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 88px;
     width: 100%;
     text-align: center;
@@ -13,15 +16,19 @@ header{
 }
 
 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
 
 form{
-    margin-top: 109px;
-    margin-left: 581px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
 }
 
 input[type=text]{
