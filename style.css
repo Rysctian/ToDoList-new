@@ -32,17 +32,7 @@ form{
 }
 
 
-@media screen and (max-width: 480px){
-    header{
-        width: 100vw;
-        height: 125px;
-        background-color: rgb(193, 228, 228);
-    }
 
-    form{
-        padding: 0 3px;
-    }
-}
 
 input[type=text]{
     width: 450px;
@@ -129,3 +119,18 @@ li > button {
     padding: 5px;
     margin: 5px;
   }
+
+
+  
+@media only screen and (max-width: 420px) {
+    header{
+        width: 100vw;
+        height: 125px;
+        background-color: rgb(193, 228, 228);
+    }
+
+    form{
+        padding: 0 3px;
+    }
+}
+ 
