@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 88px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(193, 228, 228);
+}
+
+h1{
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+form{
+    margin-top: 109px;
+    margin-left: 581px;
+    display: inline-flex;
+}
+
+input[type=text]{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+input[type=submit]{
+    background-color: rgb(255, 0, 68);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    height: 46px;
+    margin-top: 3px;
+}
+
+
+/* ul{
+    margin-top: 109px;
+    list-style: none;
+    width: 80%;
+    margin: 0px auto ;
+    margin-top: 30px;
+} */
+
+/* .group-item {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #111;
+    height: 10px;
+    padding: 25px;
+    display:flex;
+    border-radius: 10px; 
+    
+} */
+
+.list-group-item {
+     font-family: 'Caveat', cursive !important;
+     font-size: 35px !important; 
+     text-transform: capitalize;
+}
+
+#btn-2{
+    background-color: rgb(118, 106, 228);
+    border: none;
+    color: rgb(255, 255, 255);
+} 
+
+li > button {
+	background: none;
+	border: none;
+	float: right;
+	color: rgb(21, 22, 112);
+	font-weight: 800;
+    background-color:#e74c1c;
+    width: 25px;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.done {
+	color: #00891E;
+    text-decoration: line-through !important;
+}
+
+.delete {
+	display: none;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+  }
