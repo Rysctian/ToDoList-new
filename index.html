@@ -10,29 +10,24 @@
 </head>
 <body>
     <header>
-        <h2>To do List (1st) Project</h2>
+        <h2 class="project-title">To do List</h2>
     </header>
 
 
     <div class="msg"></div>
     
-    <form id="addform">
-        <input type="text" id="item" placeholder="To do list...">
 
-        
-        <button type="submit" id="btn" class="submit-btn" value="add Task">
-            <i class="fa-solid fa-plus"></i>
-            Add
-        </button>
+        <form id="addform">
+            <input type="text" id="item" placeholder="To do list...">
+            <button type="submit" id="btn" class="submit-btn" value="add Task">
+                <i class="fa-solid fa-plus"></i>
+               <p>Add</p>
+            </button>
+        </form>
 
-    </form>
 
         <div class="card-body">
             <ul id="items" class="list-group">
-                <li class="item-list">Learn javascript 
-                    <button ><i class="fa-solid fa-check"></i></button>
-                    <button ><i class="fa-solid fa-trash"></i></button>
-                </li>
                 
             </ul>
         </div>
