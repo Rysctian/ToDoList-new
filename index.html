@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ecdd77b7a5.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>To do List (1st) Project</h1>
+        <h2>To do List (1st) Project</h2>
     </header>
-    
-    <div id="remove"></div>
+
 
     <div class="msg"></div>
+    
     <form id="addform">
         <input type="text" id="item" placeholder="To do list...">
-        <input type="submit" id="btn" value="add Task">
+
+        
+        <button type="submit" id="btn" class="submit-btn" value="add Task">
+            <i class="fa-solid fa-plus"></i>
+            Add
+        </button>
+
     </form>
-    <div class="container">
-    <div class="card-body">
-        <ul id="items" class="list-group"></ul>
-       <!-- <li class="list-group-item mt-3 ps-20 ">Item 1 <button >X</button></li> -->
-    </div>
-    </div>
+
+        <div class="card-body">
+            <ul id="items" class="list-group">
+                <li class="item-list">Learn javascript 
+                    <button ><i class="fa-solid fa-check"></i></button>
+                    <button ><i class="fa-solid fa-trash"></i></button>
+                </li>
+                
+            </ul>
+        </div>
+
 
  <script src="script.js"></script>
 </body>
 </html>
+

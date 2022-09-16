@@ -4,49 +4,68 @@ var ul = document.querySelector("ul");
 var li = document.createElement('li')
 const msg = document.querySelector(".msg");
 
-form.addEventListener('submit', addItem)
+document.getElementsByClassName
 
-function addItem(e){
-  e.preventDefault()
-    
-  wholeTask();
-
-}
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+    wholeTask();
+});
 
 function wholeTask(){
     const task = itemInput.value
     if (!task){
-        alert('Invalid Characters')  
+        checkInputs()
+
     }else{
 
         // add Item
         var li = document.createElement('li') // create new li
-        li.className = 'list-group-item mt-3 ps-20' // create classname for li
-        li.appendChild(document.createTextNode(itemInput.value)) // create a variable if you input 
+        li.className = 'item-list' // create classname for li
+        itemValue = document.createTextNode(itemInput.value) // create a variable if you input 
+        li.appendChild(itemValue)
+        
         ul.appendChild(li)
         itemInput.value = ""
-    
-        li.addEventListener('click', itemDone)
-        function itemDone(){
+        
+        // done button
+        var doneBtn = document.createElement('button')
+        var checkBtn = document.createElement('i')
+        checkBtn.className = 'fa-solid fa-check'
+        doneBtn.appendChild(checkBtn)
+        li.appendChild(doneBtn)
+        
+        
+        checkBtn.addEventListener('click', e =>{
             li.classList.toggle('done')
-            // li.innerHTML += ' -done' if you want to add text in an item
-        }
+        } )
+     
 
         // delete button
-        var dltBtn = document.createElement('button') // create button
-        dltBtn.appendChild(document.createTextNode('X')) // create what text inside a button
-        li.appendChild(dltBtn)  //  put the delete button inside li
+        var dltBtn = document.createElement('button')
+        var trashBtn = document.createElement('i') // create button
+        trashBtn.className = 'fa-solid fa-trash' // create what text inside a button
+        dltBtn.appendChild(trashBtn)
+        li.appendChild(dltBtn)
 
-        dltBtn.addEventListener('click', removeItem) // create function for delete Button
-
-        function removeItem (){ // calling function to delete li
+        dltBtn.addEventListener('click', e =>{
             li.remove()
-        } 
+        } ) // create function for delete Button
+
+        
+                
+        // function removeItem (){ // calling function to delete li
+            
+        // } 
 
     }
 }
 
+function checkInputs(){
+    const error = document.getElementById('error')
 
+    error.className = ""
+}
 
 
 

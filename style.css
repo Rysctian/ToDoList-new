@@ -1,8 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Source+Sans+Pro:wght@300;600;700&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1e20;
 }
 
 header{
@@ -29,6 +44,9 @@ form{
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    position: relative;
+  
+    
 }
 
 
@@ -40,49 +58,69 @@ input[type=text]{
     border-radius: 10px;
     font-size: 15px;
     padding-left: 15px;
-}
-
-input[type=submit]{
-    background-color: rgb(255, 0, 68);
     border: none;
-    color: rgb(255, 255, 255);
-    padding: 12px 24px;
-    text-decoration: none;
-    margin-left: 5px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    outline: none;
+}
+
+
+
+
+          
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 90%;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 50px;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    right: 2px;
     border-radius: 10px;
-    text-transform: uppercase;
-    font-size: 13px;
-    height: 46px;
-    margin-top: 3px;
-}
+    cursor: pointer;
+  }
 
 
-/* ul{
-    margin-top: 109px;
-    list-style: none;
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 80%;
-    margin: 0px auto ;
-    margin-top: 30px;
-} */
-
-/* .group-item {
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid #111;
-    height: 10px;
-    padding: 25px;
-    display:flex;
-    border-radius: 10px; 
-    
-} */
-
-.list-group-item {
-     font-family: 'Caveat', cursive !important;
-     font-size: 35px !important; 
-     text-transform: capitalize;
 }
+
+.list-group{
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-trash,
+.fa-check{
+    font-size: 1rem;
+}
+
+.item-list {
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 1.3rem;
+     border: 0.5px solid rgb(122, 121, 121);
+     border-radius: 8px;
+     height: 40px;
+     margin: 10px;
+     width: 450px;
+     background-color: white;
+     position: relative;
+     display: flex;
+     text-transform: capitalize;
+     align-items: center;
+     padding: 5px 6px;
+}
+
 
 #btn-2{
     background-color: rgb(118, 106, 228);
@@ -90,22 +128,36 @@ input[type=submit]{
     color: rgb(255, 255, 255);
 } 
 
-li > button {
-	background: none;
-	border: none;
-	float: right;
-	color: rgb(21, 22, 112);
-	font-weight: 800;
-    background-color:#e74c1c;
-    width: 25px;
-    padding-right: 4px;
+/* .check{
+    position: absolute;
+    right: 30px;
+} */
+
+li > button{
+    background: none;
+    border: none;
+    color: rgb(32, 98, 173);
+    background-color: transparent;
+}
+
+li > button:nth-child(1)  {
     cursor: pointer;
-    font-size: 20px;
-    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+li > button:nth-child(2)  {
+    background: none;
+    border: none;
+    color: rgb(32, 98, 173);
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+   
 }
 
 .done {
-	color: #00891E;
+	color: #ca0748;
     text-decoration: line-through !important;
 }
 
@@ -113,12 +165,10 @@ li > button {
 	display: none;
 }
 
-.error {
-    background: orangered;
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
-  }
+
+
+
+
 
 
   
@@ -134,3 +184,17 @@ li > button {
     }
 }
  
+#error {
+   position: absolute;
+    left: 84px;
+    top: 50px;
+    color: red;    
+    visibility: hidden;
+}
+
+.failed{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
